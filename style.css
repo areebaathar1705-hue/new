@@ -4,32 +4,34 @@
 <uniquifier>: Use a unique and descriptive class name */
 
 .montserrat-400 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.montserrat-700 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-*{
+.montserrat-700 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     /* just for showing that div is made we use bgcolor or border
     background-color: red; */
 
-    height: 100vh;
+    height: 110vh;
     background-image: url(./images/background.png);
 
-    /* agar image choti hogi to wo repeat hogi to ye usy full page per repeat nahi hony dega
-    background-repeat: no-repeat;  */
+    /* agar image choti hogi to wo repeat hogi to ye usy full page per repeat nahi hony dega */
+    background-repeat: no-repeat;
 
     /* agar pic ko full page per lana ho to cover use karean gy */
     background-size: cover;
@@ -37,38 +39,43 @@
 }
 
 /* Header css */
-header nav{
+header nav {
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
     padding: 20px 0px;
-    border-bottom: 2px solid #BC8741 ;
+    border-bottom: 2px solid #BC8741;
     margin-bottom: 10px;
 }
-.logo{
+
+.logo {
     font-weight: 600;
     cursor: pointer;
     font-size: 22px;
 }
-.logo span{
+
+.logo span {
     color: #BC8741;
 }
-header nav ul{
+
+header nav ul {
     display: flex;
     list-style: none;
     gap: 50px;
 }
-header nav ul li a{
+
+header nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: 600;
 }
-header nav ul li a:hover{
+
+header nav ul li a:hover {
     color: #BC8741;
 }
 
 /* banner section css */
-.banner{
+.banner {
     background-image: url(./images/banner.png);
     height: 300px;
     background-repeat: no-repeat;
@@ -78,43 +85,52 @@ header nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
-.banner-inner{
+
+.banner-inner {
     text-align: center;
 }
-.banner h1{
+
+.banner h1 {
     font-size: 70px;
     color: white;
 }
-.banner input:focus{
+
+.banner input:focus {
     outline: none;
 }
-.banner input{
+
+.banner input {
     border: none;
     padding: 15px;
     margin-top: 30px;
     width: 400px;
     border-radius: 50px;
 }
-.search i{
+
+.search i {
     margin-left: -40px;
     cursor: pointer;
 }
 
 /* products section  left css */
-.products{
+.products {
     margin-top: 20px;
     display: flex;
 }
-.products .left{
+
+.products .left {
     width: 300px;
 }
-.products ul{
+
+.products ul {
     list-style: none;
 }
-.products ul li{
+
+.products ul li {
     margin-bottom: 10px;
 }
-.products ul li a{
+
+.products ul li a {
     background-color: #BC8741;
     text-decoration: none;
     color: white;
@@ -123,43 +139,51 @@ header nav ul li a:hover{
     border-radius: 50px;
     text-align: center;
 }
-.products ul li a:hover{
+
+.products ul li a:hover {
     background-color: white;
     color: #BC8741;
 }
 
 /* product section right css */
-.right{
+.right {
     padding: 0px 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.right .box{
+
+.right .box {
     width: 22%;
     margin-bottom: 20px;
 
 }
-.right .box .img-container{
+
+.right .box .img-container {
     height: 170px;
 }
-.right .box .img-container img{
+
+.right .box .img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.right .box .price{
+
+.right .box .price {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.right .box .h3{
+
+.right .box .h3 {
     margin: 10px 0px;
 }
-.price i{
+
+.price i {
     margin-right: 5px;
 }
-.price div{
+
+.price div {
     background-color: #BC8741;
     padding: 10px 15px;
     border-radius: 50px;
@@ -168,11 +192,11 @@ header nav ul li a:hover{
 }
 
 /* Responsive Design for tablet/ipad */
-@media screen and (max-width: 900px) and (min-width: 601px){
+/* @media screen and (max-width: 900px) and (min-width: 601px){
      
-}
+} */
 
 /* Responsive Design for mobile */
-@media screen and (max-width: 600px) and (min-width: 0px){
+/* @media screen and (max-width: 600px) and (min-width: 0px){
      
-}
+} */
