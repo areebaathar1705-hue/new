@@ -27,7 +27,6 @@
     /* just for showing that div is made we use bgcolor or border
     background-color: red; */
 
-    height: 110vh;
     background-image: url(./images/background.png);
 
     /* agar image choti hogi to wo repeat hogi to ye usy full page per repeat nahi hony dega */
@@ -43,6 +42,7 @@ header nav {
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0px;
     border-bottom: 2px solid #BC8741;
     margin-bottom: 10px;
@@ -72,6 +72,12 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #BC8741;
+}
+
+.bi-list {
+    font-size: 30px;
+    color: #BC8741;
+    display: none;
 }
 
 /* banner section css */
@@ -156,7 +162,7 @@ header nav ul li a:hover {
 .right .box {
     width: 22%;
     margin-bottom: 20px;
-
+    border-radius: 5px;
 }
 
 .right .box .img-container {
@@ -189,14 +195,128 @@ header nav ul li a:hover {
     border-radius: 50px;
     cursor: pointer;
     color: white;
+    margin-top: 5px;
 }
 
 /* Responsive Design for tablet/ipad */
-/* @media screen and (max-width: 900px) and (min-width: 601px){
-     
-} */
+@media screen and (max-width: 900px) and (min-width: 601px) {
+    header nav ul {
+        display: none;
+    }
+    .bi-list {
+        display: block;
+    }
+    .banner h1 {
+        font-size: 40px;
+    }
+    .banner {
+        height: 200px;
+    }
+    .banner input {
+        margin-top: 15px;
+        width: 250px;
+    }
+    .products {
+        flex-direction: column;
+    }
+
+    .products .left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .products .left ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right .box {
+        width: 48%;
+    }
+
+
+}
 
 /* Responsive Design for mobile */
-/* @media screen and (max-width: 600px) and (min-width: 0px){
-     
-} */
+@media screen and (max-width: 600px) and (min-width: 0px) {
+    header nav ul {
+        display: none;
+    }
+
+    .bi-list {
+        display: block;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .banner input {
+        margin-top: 15px;
+        width: 250px;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+
+    .products .left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .products .left ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .right .box {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+    header nav ul {
+        display: none;
+    }
+    .bi-list {
+        display: block;
+    }
+    .banner h1 {
+        font-size: 60px;
+    }
+    .banner {
+        height: 200px;
+    }
+    .banner input {
+        margin-top: 15px;
+        width: 400px;
+    }
+    .products {
+        flex-direction: column;
+    }
+
+    .products .left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .products .left ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .right .box {
+        width: 30%;
+    }
+
+
+}
